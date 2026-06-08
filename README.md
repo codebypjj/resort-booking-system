@@ -7,7 +7,7 @@ This project simulates a real-world resort reservation platform with room select
 ---
 
 ## 🚀 Live Demo
-👉 https://your-live-link-here.com
+👉 https://codebypjj.github.io/resort-booking-system/
 
 ---
 

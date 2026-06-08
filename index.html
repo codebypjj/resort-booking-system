@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resort Booking System</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <nav>
+  <div class="logo">Paglitaw <span>Beach</span> Resort</div>
+  <div class="nav-links">
+    <button class="nav-btn active" onclick="showPage('home')">Home</button>
+    <button class="nav-btn" onclick="showPage('reserve')">Book Now</button>
+    <button class="nav-btn" onclick="showPage('list')">My Reservations</button>
+    <button class="nav-btn" onclick="showPage('register')">Create Account</button>
+  </div>
+  <button class="nav-cta" onclick="showPage('reserve')">Reserve a Stay</button>
+</nav>
+
+<!-- ===== HOME PAGE ===== -->
+<div id="page-home" class="page active">
+  <div class="hero">
+    <div class="hero-eyebrow">Luxury Coastal Retreat · Est. 2009</div>
+    <h1>Where the <em>Ocean</em><br>Meets Elegance</h1>
+    <p>Nestled along the pristine shores of the Pacific, Paglitaw Beach offers unparalleled luxury with a soulful connection to nature.</p>
+    <div class="hero-btns">
+      <button class="btn-primary" onclick="showPage('reserve')">Book Your Stay</button>
+      <button class="btn-outline" onclick="document.getElementById('rooms-section').scrollIntoView({behavior:'smooth'})">Explore Rooms</button>
+    </div>
+  </div>
+
+  <div class="stats-bar">
+    <div class="stat-item"><div class="stat-num">48</div><div class="stat-label">Luxury Rooms</div></div>
+    <div class="stat-item"><div class="stat-num">4.9★</div><div class="stat-label">Guest Rating</div></div>
+    <div class="stat-item"><div class="stat-num">15+</div><div class="stat-label">Years of Service</div></div>
+    <div class="stat-item"><div class="stat-num">3</div><div class="stat-label">Event Halls</div></div>
+  </div>
+
+  <div class="section" id="rooms-section">
+    <div class="section-tag">Our Spaces</div>
+    <h2>Rooms & Venues</h2>
+    <div class="rooms-grid">
+      <div class="room-card">
+        <div class="room-img ocean">🌊</div>
+        <div class="room-info">
+          <div class="room-name">Ocean View Suite</div>
+          <div class="room-rate">₱8,500 <span>/ night</span></div>
+          <div class="room-badge">Most Popular</div>
+        </div>
+      </div>
+      <div class="room-card">
+        <div class="room-img garden">🌿</div>
+        <div class="room-info">
+          <div class="room-name">Garden Cottage</div>
+          <div class="room-rate">₱5,200 <span>/ night</span></div>
+          <div class="room-badge">Peaceful Retreat</div>
+        </div>
+      </div>
+      <div class="room-card">
+        <div class="room-img villa">🏛️</div>
+        <div class="room-info">
+          <div class="room-name">Beachfront Villa</div>
+          <div class="room-rate">₱18,000 <span>/ night</span></div>
+          <div class="room-badge">Premium</div>
+        </div>
+      </div>
+      <div class="room-card">
+        <div class="room-img hall">✨</div>
+        <div class="room-info">
+          <div class="room-name">Sapphire Event Hall</div>
+          <div class="room-rate">₱35,000 <span>/ day</span></div>
+          <div class="room-badge">Up to 200 guests</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="background: var(--ocean); padding: 60px 2rem;">
+    <div style="max-width: 900px; margin: 0 auto;">
+      <div class="section-tag" style="color: var(--gold);">World-Class Amenities</div>
+      <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 34px; font-weight: 300; color: var(--sand); margin-bottom: 24px;">Everything You Need for a Perfect Stay</h2>
+      <div class="amenities">
+        <div class="amenity">🏊 Infinity Pool</div>
+        <div class="amenity">🍽️ Oceanfront Dining</div>
+        <div class="amenity">💆 Spa & Wellness</div>
+        <div class="amenity">🤿 Water Activities</div>
+        <div class="amenity">🎾 Sports Courts</div>
+        <div class="amenity">📶 Free Wi-Fi</div>
+        <div class="amenity">🛥️ Island Hopping Tours</div>
+        <div class="amenity">🧖 Beach Cabanas</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-tag">Get In Touch</div>
+    <h2>Contact Us</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">
+      <div style="background: var(--white); border-radius: 10px; border: 1px solid var(--sand-dark); padding: 20px;">
+        <div style="font-size: 24px; margin-bottom: 10px;">📍</div>
+        <div style="font-size: 12px; color: var(--text-muted); margin-bottom: 4px;">Address</div>
+        <div style="font-size: 13px; font-weight: 500; color: var(--text-dark);">123 Paglitaw Beach Resort<br>Batangas, Philippines</div>
+      </div>
+      <div style="background: var(--white); border-radius: 10px; border: 1px solid var(--sand-dark); padding: 20px;">
+        <div style="font-size: 24px; margin-bottom: 10px;">📞</div>
+        <div style="font-size: 12px; color: var(--text-muted); margin-bottom: 4px;">Phone</div>
+        <div style="font-size: 13px; font-weight: 500; color: var(--text-dark);">+63 (43) 555-0190<br>+63 917 555 8823</div>
+      </div>
+      <div style="background: var(--white); border-radius: 10px; border: 1px solid var(--sand-dark); padding: 20px;">
+        <div style="font-size: 24px; margin-bottom: 10px;">✉️</div>
+        <div style="font-size: 12px; color: var(--text-muted); margin-bottom: 4px;">Email</div>
+        <div style="font-size: 13px; font-weight: 500; color: var(--text-dark);">reservations@<br>PaglitawBeachResort.com</div>
+      </div>
+      <div style="background: var(--white); border-radius: 10px; border: 1px solid var(--sand-dark); padding: 20px;">
+        <div style="font-size: 24px; margin-bottom: 10px;">⏰</div>
+        <div style="font-size: 12px; color: var(--text-muted); margin-bottom: 4px;">Office Hours</div>
+        <div style="font-size: 13px; font-weight: 500; color: var(--text-dark);">Mon–Sun<br>7:00 AM – 10:00 PM</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="site-footer">© 2026 Paglitaw Beach Resort. All rights reserved. | Batangas, Philippines</div>
+</div>
+
+<!-- ===== RESERVATION PAGE ===== -->
+<div id="page-reserve" class="page">
+  <div class="res-layout">
+    <div class="res-left">
+      <h2>Reserve Your<br>Perfect Escape</h2>
+      <p>Complete the form below to secure your booking. Conflict-free scheduling guaranteed.</p>
+
+      <div class="form-section">
+        <label class="form-label">Full Name</label>
+        <input class="form-input" type="text" placeholder="e.g. Maria Santos" id="guestName">
+      </div>
+      <div class="form-section">
+        <label class="form-label">Email Address</label>
+        <input class="form-input" type="email" placeholder="your@email.com" id="guestEmail">
+      </div>
+      <div class="form-section">
+        <label class="form-label">Contact Number</label>
+        <input class="form-input" type="tel" placeholder="+63 9XX XXX XXXX" id="guestPhone">
+      </div>
+
+      <div class="form-section">
+        <label class="form-label">Select Room / Venue</label>
+        <div class="room-selector">
+          <div class="room-opt" onclick="selectRoom(this,'Ocean View Suite','ocean',8500)">
+            <span class="room-opt-icon">🌊</span>
+            <div class="room-opt-name">Ocean Suite</div>
+            <div class="room-opt-price">₱8,500/night</div>
+          </div>
+          <div class="room-opt" onclick="selectRoom(this,'Garden Cottage','garden',5200)">
+            <span class="room-opt-icon">🌿</span>
+            <div class="room-opt-name">Garden Cottage</div>
+            <div class="room-opt-price">₱5,200/night</div>
+          </div>
+          <div class="room-opt" onclick="selectRoom(this,'Beachfront Villa','villa',18000)">
+            <span class="room-opt-icon">🏛️</span>
+            <div class="room-opt-name">Beach Villa</div>
+            <div class="room-opt-price">₱18,000/night</div>
+          </div>
+          <div class="room-opt" onclick="selectRoom(this,'Sapphire Event Hall','hall',35000)">
+            <span class="room-opt-icon">✨</span>
+            <div class="room-opt-name">Event Hall</div>
+            <div class="room-opt-price">₱35,000/day</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <label class="form-label">Check-in Date</label>
+        <input class="form-input" type="date" id="checkIn" oninput="updateSummary()">
+      </div>
+      <div class="form-section">
+        <label class="form-label">Check-out Date</label>
+        <input class="form-input" type="date" id="checkOut" oninput="updateSummary()">
+      </div>
+      <div class="form-section">
+        <label class="form-label">Number of Guests</label>
+        <select class="form-select" id="guests">
+          <option>1 Guest</option><option>2 Guests</option><option selected>3 Guests</option>
+          <option>4 Guests</option><option>5+ Guests</option>
+        </select>
+      </div>
+      <div class="form-section">
+        <label class="form-label">Special Requests</label>
+        <input class="form-input" type="text" placeholder="e.g. Early check-in, Honeymoon setup..." id="requests">
+      </div>
+
+      <button class="submit-btn" onclick="submitReservation()">Confirm Reservation</button>
+    </div>
+
+    <div class="res-right">
+      <h3>Availability Calendar</h3>
+      <p>Red dates are already booked. Select your preferred dates on the left.</p>
+
+      <div class="calendar-wrap">
+        <div class="cal-header">
+          <button class="cal-nav" onclick="changeMonth(-1)">&#8249;</button>
+          <div class="cal-title" id="calTitle">May 2026</div>
+          <button class="cal-nav" onclick="changeMonth(1)">&#8250;</button>
+        </div>
+        <div class="cal-grid">
+          <div class="cal-days" id="calDayNames"></div>
+          <div class="cal-days" id="calDates"></div>
+        </div>
+        <div class="cal-legend">
+          <span><span class="legend-dot" style="background: rgba(212,115,90,0.3);"></span>Booked</span>
+          <span><span class="legend-dot" style="background: var(--ocean);"></span>Your Selection</span>
+          <span><span class="legend-dot" style="background: transparent; border: 1.5px solid var(--seafoam);"></span>Today</span>
+        </div>
+      </div>
+
+      <div class="summary-card">
+        <div class="summary-title">Booking Summary</div>
+        <div class="summary-row"><span class="label">Room / Venue</span><span class="value" id="sumRoom">— Select above</span></div>
+        <div class="summary-row"><span class="label">Check-in</span><span class="value" id="sumIn">—</span></div>
+        <div class="summary-row"><span class="label">Check-out</span><span class="value" id="sumOut">—</span></div>
+        <div class="summary-row"><span class="label">Duration</span><span class="value" id="sumDays">—</span></div>
+        <div class="summary-row"><span class="label">Rate per night</span><span class="value" id="sumRate">—</span></div>
+        <div class="total-row">
+          <span class="label">Estimated Total</span>
+          <span class="value" id="sumTotal">₱ —</span>
+        </div>
+      </div>
+
+      <div style="margin-top: 20px; background: rgba(74,174,160,0.1); border: 1px solid rgba(74,174,160,0.3); border-radius: 10px; padding: 14px 16px;">
+        <div style="font-size: 12px; font-weight: 500; color: var(--seafoam); margin-bottom: 6px;">🛡️ Conflict-Free Guarantee</div>
+        <div style="font-size: 12px; color: var(--text-muted); line-height: 1.6;">Our system automatically checks for scheduling conflicts before confirming any reservation. Double-bookings are impossible.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== LIST PAGE ===== -->
+<div id="page-list" class="page">
+  <div class="list-page">
+    <div class="list-header">
+      <h2>My Reservations</h2>
+      <button class="btn-primary" onclick="showPage('reserve')" style="font-size: 13px; padding: 9px 18px; border-radius: 8px;">+ New Booking</button>
+    </div>
+
+    <div class="filters">
+      <select class="filter-select" id="roomFilter" onchange="renderList()">
+        <option value="">All Room Types</option>
+        <option value="Ocean View Suite">Ocean Suite</option>
+        <option value="Garden Cottage">Garden Cottage</option>
+        <option value="Beachfront Villa">Beach Villa</option>
+        <option value="Sapphire Event Hall">Event Hall</option>
+      </select>
+      <select class="filter-select" id="dateFilter" onchange="renderList()">
+        <option value="">All Dates</option>
+        <option value="upcoming">Upcoming</option>
+        <option value="past">Past</option>
+      </select>
+    </div>
+
+    <div class="status-tabs">
+      <button class="status-tab active" onclick="filterStatus('all',this)">All <span class="badge tab-count-dark" id="count-all">0</span></button>
+      <button class="status-tab" onclick="filterStatus('Pending',this)">Pending <span class="badge tab-count-dark" id="count-pending">0</span></button>
+      <button class="status-tab" onclick="filterStatus('Approved',this)">Approved <span class="badge tab-count-dark" id="count-approved">0</span></button>
+      <button class="status-tab" onclick="filterStatus('Completed',this)">Completed <span class="badge tab-count-dark" id="count-completed">0</span></button>
+    </div>
+
+    <div id="reservationList"></div>
+  </div>
+</div>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal">
+    <h3 id="modalTitle">Confirm Action</h3>
+    <p id="modalMsg">Are you sure?</p>
+    <div class="modal-btns">
+      <button class="modal-cancel" onclick="closeModal()">Cancel</button>
+      <button class="modal-confirm" id="modalConfirm">Confirm</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<!-- ===== REGISTER PAGE ===== -->
+<div id="page-register" class="page">
+  <div class="res-layout">
+    <div class="res-left">
+      <h2>Create Account</h2>
+
+      <div class="form-section">
+        <label class="form-label">Full Name</label>
+        <input class="form-input" id="regName">
+      </div>
+
+      <div class="form-section">
+        <label class="form-label">Email</label>
+        <input class="form-input" type="email" id="regEmail">
+      </div>
+
+      <div class="form-section">
+        <label class="form-label">Password</label>
+        <input class="form-input" type="password" id="regPass">
+      </div>
+
+      <button class="submit-btn" onclick="registerUser()">Create Account</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

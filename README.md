@@ -65,8 +65,8 @@ This project simulates a real-world resort reservation platform with room select
 ## 🛠️ Tech Stack
 
 - HTML5
-- CSS3 (Custom styling)
-- Vanilla JavaScript (DOM manipulation + UI logic)
+- CSS3
+- JavaScript
 - Google Fonts (Cormorant Garamond, DM Sans)
 
 ---

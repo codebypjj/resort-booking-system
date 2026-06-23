@@ -71,20 +71,6 @@ This project simulates a real-world resort reservation platform with room select
 
 ---
 
-```
-## 📂 Project Structure
-/resort-booking-system
-│
-├── index.html
-├── style.css
-├── script.js
-├── /assets (images if any)
-└── README.md
-```
-
-
----
-
 ## 🧠 Key Functional Logic
 
 This project demonstrates:
@@ -96,17 +82,6 @@ This project demonstrates:
 - Modal confirmation workflow
 - Booking summary computation
 - Basic frontend state management using JavaScript
-
----
-
-## 📸 Screenshots
-
-Add screenshots of:
-
-- 🏠 Home page (hero + rooms section)
-- 📅 Reservation form page
-- 📋 My Reservations page with filters
-- 📱 Mobile responsive view
 
 ---
 

@@ -1,4 +1,4 @@
-# 🏝️ Paglitaw Beach Resort — Booking System
+# Beach Resort — Booking System
 
 A responsive web-based resort booking system that allows users to browse resort accommodations, make reservations, and manage bookings through a modern multi-page interface.
 
@@ -6,14 +6,14 @@ This project simulates a real-world resort reservation platform with room select
 
 ---
 
-## 🚀 Live Demo
+## Live Demo
 👉 https://codebypjj.github.io/resort-booking-system/
 
 ---
 
-## ✨ Features
+## Features
 
-### 🏠 Home Page
+### Home Page
 - Hero landing section with resort branding
 - Room and venue showcase (Ocean Suite, Garden Cottage, Beach Villa, Event Hall)
 - Amenities section (pool, spa, dining, etc.)
@@ -22,7 +22,7 @@ This project simulates a real-world resort reservation platform with room select
 
 ---
 
-### 📅 Reservation System
+### Reservation System
 - Full booking form with:
   - Guest details (name, email, phone)
   - Room/venue selection
@@ -35,7 +35,7 @@ This project simulates a real-world resort reservation platform with room select
 
 ---
 
-### 📋 Reservation Management
+### Reservation Management
 - View all reservations
 - Filter by:
   - Room type
@@ -46,13 +46,13 @@ This project simulates a real-world resort reservation platform with room select
 
 ---
 
-### 👤 User System (Frontend Simulation)
+### User System (Frontend Simulation)
 - Account registration page
 - Basic user input validation (name, email, password fields)
 
 ---
 
-### 🎨 UI/UX Features
+### UI/UX Features
 - Multi-page SPA-style navigation (no page reload)
 - Smooth section switching using JavaScript
 - Responsive layout design
@@ -62,7 +62,7 @@ This project simulates a real-world resort reservation platform with room select
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - HTML5
 - CSS3
@@ -71,7 +71,7 @@ This project simulates a real-world resort reservation platform with room select
 
 ---
 
-## 🧠 Key Functional Logic
+## Key Functional Logic
 
 This project demonstrates:
 
@@ -85,7 +85,7 @@ This project demonstrates:
 
 ---
 
-## 📌 Future Improvements
+## Future Improvements
 
 - Backend integration (Node.js / Firebase)
 - Real database storage for bookings
@@ -96,6 +96,6 @@ This project demonstrates:
 
 ---
 
-## 👤 Author
+## Author
 
 Patrick James Villamayor
